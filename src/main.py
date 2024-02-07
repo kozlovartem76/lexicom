@@ -4,7 +4,7 @@ from redis import StrictRedis
 
 
 app = FastAPI()
-redis_client = StrictRedis(host="redis", port=6379, db=0, decode_responses=True)
+redis_client = StrictRedis(host="redis", port=6379, decode_responses=True)
 
 
 class Data(BaseModel):
